@@ -117,8 +117,9 @@ Pronto!
 
 <h1>
   <a id="images"></a>
-  ⌨️ Imagens
+  :camera: Imagens
 </h1>
+
 
 
 ![home](https://user-images.githubusercontent.com/83131771/220484580-5525d1ee-eee1-45fa-b4cf-3476f11c4625.png)
@@ -134,3 +135,5 @@ Pronto!
 ![player](https://user-images.githubusercontent.com/83131771/220484591-e665d52b-06db-4400-bb67-c681e1d1b3ce.png)
 
 ![izunome-categorias](https://user-images.githubusercontent.com/83131771/220484594-aa92bcae-3f74-44be-80ef-b4db57430143.png)
+
+
