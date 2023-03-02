@@ -6,7 +6,7 @@
 
 </h1>
 
-<h2 align="center">Interface Izunome TV</h2>
+<h2 align="center">Interface Izunome.TV</h2>
 
 
 <p align="center">
