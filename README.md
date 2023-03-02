@@ -10,15 +10,15 @@
 
 
 <p align="center">
-  <a href="#project">Projeto</a>
+  <a href="#project">Project</a>
   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#requisites">Requisitos</a>
+  <a href="#requisites">Requisites</a>
   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#techs">Tecnologias</a>
+  <a href="#techs">Techs</a>
   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#clone">Clonando</a>
+  <a href="#clone">Cloning</a>
   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#images">Imagens</a>
+  <a href="#images">Images</a>
   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
@@ -27,11 +27,12 @@
 
 <h1>
   <a id="project"></a>
-  📦 Projeto
+  📦 Project
 </h1>
 
-O objetivo do projeto é realizar uma repaginação na interface do site https://izunometv.messianica.org.br/ da Igreja Mssiânica Mundial.
-Observação: O projeto está apenas com a versão web e os dados estão mockados.
+The purpose of the project is to redesign the interface of the IMMB (Sekai Kyusei Kyo in Brazil) website Izunome: https://izunometv.messianica.org.br/ with React.js. Since the church offers daily services, the idea is to create a website with a streaming interface.
+
+Note: The project only has the web version and the data is mocked.
 <br>
 
 
@@ -40,48 +41,47 @@ Observação: O projeto está apenas com a versão web e os dados estão mockado
 
 <h1>
   <a id="requisites"></a>
-  📝 Requisitos
+  📝 Requisites
 </h1>
 
-Para executar esse projeto é necessário ter o **Node.js** e **NPM** ou **Yarn** instalados em seu computador:
+To run this project you need to have **Node.js** and **NPM** or **Yarn** installed on your computer:
 
 - [Node.js](https://nodejs.org/en/)
 - [NPM](https://npmjs.com/get-npm)
 - [Yarn](https://yarnpkg.com/getting-started)
 
-### Verificar os requisitos
+### Check the requirements
 
-Para verificar se você tem o Node.js instalado, execute este comando em seu terminal:
+To verify that you have Node.js installed, run this command in your terminal:
 
 ```bash
 node -v
 ```
 
-Para confirmar que o npm está instalado, você pode executar este comando no seu terminal:
-
+To confirm that npm is installed, you can run this command in your terminal:
 ```bash
 npm -v
 # ou
 yarn -v
 ```
 
-> 📌 **Nota:**
+> 📌 **Note:**
 >
-> - Se os comandos não forem encontrados, reinicie o terminal.
+> -If the commands are not found, restart the terminal.
 >
-> - Se ainda não funcionar, verifique se o caminho onde o _Node.js_ foi instalado, encontra-se nas variáveis de ambiente do seu sistema operacional, se não estiver, insira-o e reinicie o terminal novamente.
+> - If it still doesn't work, check if the path where _Node.js_ was installed is found in the environment variables of your operating system, if not, enter it and restart the terminal again.
 >
-> - Em último caso, reinstale o _Node.js_.
+> - As a last resort, reinstall Node.js.
 
 <br>
 
 
 <h1>
   <a id="techs"></a>
-  ⚡ Tecnologias
+  ⚡ Technologies
 </h1>
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+This project was developed with the technologies:
 
 - [ReactJS](https://reactjs.org)
 - [Styled Components](https://styled-components.com)
@@ -91,24 +91,23 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 
 <h1>
-  <a id="clone"></a>
-  📥 Clonando
+<a id="clone"></a>
+   📥 Cloning
 </h1>
 
 
-Para clonar esse repositório digite o seguinte comando:
+To clone this repository type the following command:
 
 ```bash
 git clone https://github.com/ThalitaCesar/Interface-IzunomeTV
 ```
 
-Inicie executando:
+Start by running:
 
 ```bash
 yarn dev
 ```
-
-Pronto!
+Done!
 
 <br>
 
@@ -117,7 +116,7 @@ Pronto!
 
 <h1>
   <a id="images"></a>
-  :camera: Imagens
+  :camera: Images
 </h1>
 
 
