@@ -5,12 +5,12 @@ overflow-x: hidden;
 display:flex;
 flex-direction:column;
 justify-content:space-between;
-width: 1210px; 
-height: 400px;
-border-radius: 20px;
+width: 88vw; 
+height: 550px;
+border-radius: 14px;
 padding: 30px;
 margin: 30px;
-margin-bottom:-30px;
+margin-bottom:30px;
 background-image: linear-gradient(
     to bottom,
     rgba(0,0,0,0) 1%,
@@ -26,13 +26,13 @@ export const Content  = styled.div`
 display:flex;
 flex-direction:column;
 justify-content:space-between;
-height:370px;
+height: 550px;
 `
 
 export const Title  = styled.p`
-color: var(--white);
+color: var(--light-gray);
 font-weight: 700;
-font-size: 28px;
+font-size: 20px;
 `
 
 export const TitleInfo  = styled.h3`
@@ -69,16 +69,17 @@ justify-content: space-between;
  }
 `
 export const ButtonWatch  = styled.button`
-max-width:115px;
 display: flex;
 cursor:pointer;
 margin-right: 16px;
 color: var(--white);
-background: var(--blue);
-border-radius: 16px;
-padding: 7px;
-align-items:center;
-padding-left:7px;
+height: 56px;
+padding: 19px 25px;
+align-items: center;
+flex-shrink: 0;
+border-radius: 15px;
+background: rgba(17, 53, 125, 0.7);
+backdrop-filter: blur(4px);
 justify-content: space-between;
 font-size:16px;
 font-weight: 600;

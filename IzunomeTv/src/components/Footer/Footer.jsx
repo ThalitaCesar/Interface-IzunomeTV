@@ -2,6 +2,7 @@ import React from 'react'
 import immb from '../../assets/immb.svg'
 import { ContainerOverview } from '../../pages/Category/OverviewDailyServices/styles'
 import { Column,Logo, FooterContainer, FooterLink, LinksContainer, LowerRow, SocialNetworksContainer, UpperRow } from './styles'
+import { Divider } from 'antd'
 
 const Footer = () => {
   return (
@@ -66,6 +67,7 @@ const Footer = () => {
       
         </Column>
         </LinksContainer>
+        <Divider style={{background: '#79ba6e'}}/>
 
         <SocialNetworksContainer>
            <p style={{fontSize: "14px"}}>@ 2023 Igreja Messiânica Mundial do Brasil. Todos os direitos reservados.</p>

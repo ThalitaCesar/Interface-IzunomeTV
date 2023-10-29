@@ -30,11 +30,11 @@ export const SlideLive = () => {
       <ButtonGroup>
       <ButtonWatch onClick={handleClick}>
         <p>Assistir</p>
-        <BiPlay size={35}/>
+        <BiPlay size={25}/>
       </ButtonWatch>
-      <ButtonWatch style={{background: 'var(--strong-gray)'}}
+      <ButtonWatch style={{background: 'rgba(85, 104, 160, 0.4)'}}
       onClick={()=> {setMore(true)}}>
-        <MdAdd size={35}/>
+        <MdAdd size={25}/>
       </ButtonWatch>
       </ButtonGroup>
       </div>
@@ -43,7 +43,7 @@ export const SlideLive = () => {
 
     ):null}
     {more? (
-      <Container style={{background:"var(--light-gray)"}}>
+      <Container style={{background:"var(--medium-gray)"}}>
       <Content>
       <TitleInfo>Transmissões ao vivo </TitleInfo>
       <Text>
@@ -64,10 +64,9 @@ export const SlideLive = () => {
       (início da transmissão: 30 minutos antes)
       </div>
       </Text>
-      <ButtonWatch style={{background: 'var(--strong-gray)'}}
+      <ButtonWatch style={{background: 'rgba(85, 104, 160, 0.4)', width:'70px'}}
       onClick={() => setMore(false)}>
-      <BiArrowBack size={35}/>
-      Voltar
+      <BiArrowBack size={25}/>
       </ButtonWatch>
       </Content>    
      </Container>

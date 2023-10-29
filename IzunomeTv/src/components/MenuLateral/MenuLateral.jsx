@@ -1,46 +1,127 @@
-import React from 'react'
-import { AppMenu, Icone, MenuLinks, ShortMenu } from './Styles'
-import { BiHomeHeart, BiCategoryAlt, BiBookAlt, BiSearchAlt, BiUser } from 'react-icons/bi';
-import {MdOutlineContactSupport} from 'react-icons/md';
-import {FaPrayingHands} from 'react-icons/fa';
-import { Avatar, Tooltip } from 'antd';
-import {CgMenuGridR} from 'react-icons/cg';
-import { Link } from 'react-router-dom';
+import React, {useState} from 'react';
+import {AppMenu, Icone, MenuLinks, ShortMenu} from './Styles';
+import {Avatar} from 'antd';
+import {Link} from 'react-router-dom';
+import user from '../../assets/user.jpg'
+import HomeIcon from '../../assets/icons/home';
+import CategoryIcon from '../../assets/icons/category';
+import SearchIcon from '../../assets/icons/search';
+import AboutIcon from '../../assets/icons/about';
+import LogoutIcon from '../../assets/icons/logout';
+import PayingIcon from '../../assets/icons/praying';
+import NotificationIcon from '../../assets/icons/notification';
+import WhatchlistIcon from '../../assets/icons/watchlist';
 
 const MenuLateral = () => {
-  return (
-    <AppMenu>
-            <Avatar size={40} icon={<BiUser />} />
-  <ShortMenu>
+    const [isHovered,
+        setIsHovered] = useState(false);
 
-  <Link to='/'>
-  <Tooltip title="Página Inicial"><Icone> <BiHomeHeart size={30}/> </Icone> </Tooltip>
-  </Link>
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+    };
 
-  <Link to='/'>
-  <Tooltip title="Pesquisar"> <Icone> <BiSearchAlt size={30}/> </Icone></Tooltip>
-  </Link>
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+    };
 
-  <Link to='/categories'>
-  <Tooltip title="Categorias"> <Icone> <BiCategoryAlt size={30}/> </Icone></Tooltip>
-   </Link>
+    return (
+        <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <AppMenu
+             isHovered={isHovered} 
+                style={{
+                width: isHovered
+                    ? '187px'
+                    : '65px'
+            }}>
+                <MenuLinks>
+                    <Link
+                        to='/'
+                        style={{
+                        textDecoration: 'none',
+                        display: 'flex'
+                    }}>
+                        <Avatar
+                            size={50}
+                            style={{
+                            marginLeft: '-16px'
+                        }}
+                            src={user}/> {isHovered && <> <p
+                            style={{
+                            marginTop: '16px'
+                        }}>Meu Perfil</p> </>}
+                    </Link>
+                </MenuLinks>
+                <ShortMenu>
+                    <Link
+                        to='/'
+                        style={{
+                        textDecoration: 'none'
+                    }}>
+                        <Icone>
+                        <HomeIcon color="#5568a0" size={19}/> {isHovered && <p>Página Inicial</p>}
+                        </Icone>
+                    </Link>
 
-  <Link to='/'>
-  <Tooltip title="Sobre Nós"><Icone> <BiBookAlt size={30}/> </Icone></Tooltip>
-   </Link>
+                    <Link
+                        to='/'
+                        style={{
+                        textDecoration: 'none'
+                    }}>
+                        <Icone>
+                        <SearchIcon color="#5568a0" size={19}/> {isHovered && <p>Pesquisar</p>}
+                        </Icone>
+                    </Link>
 
-  <Link to='/'>
-  <Tooltip title="Pedidos de Prece"> <Icone> <FaPrayingHands size={30}/> </Icone></Tooltip>
-  </Link>
-  
-  </ShortMenu>
-  <MenuLinks>
-      <Tooltip title="Links">
-      <CgMenuGridR size={35}/>
-      </Tooltip>
-      </MenuLinks>
-    </AppMenu>
-  )
-}
+                    <Link
+                        to='/categories'
+                        style={{
+                        textDecoration: 'none'
+                    }}>
+                        <Icone>
+                        <CategoryIcon color="#5568a0" size={19}/> {isHovered && <p>Categorias</p>}
+                        </Icone>
+                    </Link>
+                    <Link
+                        to='/'
+                        style={{
+                        textDecoration: 'none'
+                    }}>
+                        <Icone>
+                        <WhatchlistIcon color="#5568a0" size={19}/> {isHovered && <p>Minha lista</p>}
+                        </Icone>
+                    </Link>
 
-export default MenuLateral
+                    <Link
+                        to='/'
+                        style={{
+                        textDecoration: 'none'
+                    }}>
+                        <Icone>
+                        <AboutIcon color="#5568a0" size={19}/> {isHovered && <p>Sobre Nós</p>}
+                        </Icone>
+                    </Link>
+                    <Link
+                        to='/'
+                        style={{
+                        textDecoration: 'none'
+                    }}>
+                        <Icone>
+                        <NotificationIcon color="#5568a0" size={19}/> {isHovered && <p>Notificações</p>}
+                        </Icone>
+                    </Link>
+
+                </ShortMenu>
+                <MenuLinks style={{
+                    marginBottom: '14px',
+                    marginLeft:'8px'
+                }}>
+                    <LogoutIcon color="#5568a0"
+                     size={19}
+                    /> {isHovered && <p>Sair</p>}
+                </MenuLinks>
+            </AppMenu>
+        </div>
+    );
+};
+
+export default MenuLateral;

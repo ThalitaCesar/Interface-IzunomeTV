@@ -2,18 +2,20 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
-  background: linear-gradient(90deg, rgba(102,208,204,0.6166841736694677) 0%, rgba(252,215,60,0.6306897759103641) 50%, rgba(234,100,81,0.3169642857142857) 100%);  color: #c6c6c6;
-  width:1280px;
+background: #292e42;
+ width:100%;
   display: flex;
-  border-top-right-radius:80px;
+  border-top-right-radius:380px;
   flex-direction: column;
   justify-content: space-between;
   padding: 30px 60px;
   left:0;
+  margin-left: -30px;
   margin-top:30px;
   box-sizing: border-box;
   bottom: 0;
   overflow-x: hidden;
+  border: 1px solid var(--medium-gray)
 `;
 
 export const UpperRow = styled.div`
@@ -46,20 +48,21 @@ export const Column = styled.div`
 display: flex;
 flex-direction: column;
 .Footer-title{
-    color: var(--light--green);
+    color: #79ba6e;
     font-size: 18px;
+    font-weight: 300;
     margin-bottom:16px;
 }
 `
 export const FooterLink = styled(Link)`
   text-decoration: none;
-  color: var(--strong-gray);
-  font-weight: 400;
-  font-size: 14px;
+  color: var(--medium-gray);
+  font-weight: 300;
+  font-size: 16px;
   line-height: 14px;
   padding-bottom:15px;
   &:hover {
-    color: var(--light--green);
+    color: #F6B048;
   }
 `;
 export const SocialNetworksContainer = styled.div`
@@ -67,7 +70,7 @@ export const SocialNetworksContainer = styled.div`
   margin-top:40px;
   align-items: center;
   justify-content:center;
-  color:var(--light--green);
+  color:var(--white);
   min-width: fit-content;
   @media(max-width: 820px) {
     padding-top:30px;

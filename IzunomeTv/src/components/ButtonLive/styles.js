@@ -6,8 +6,9 @@ export const AppMenu = styled.div`
       display: flex;
       cursor:pointer;
       color: var(--white);
-      background: red;
-      border-radius: 16px;
+      background: rgb(202,11,11);
+      background: radial-gradient(circle, rgba(202,11,11,1) 0%, rgba(239,19,19,0.7562674728094363) 88%);
+      border-radius: 7px;
     padding: 7px;
     align-items:center;
     padding-left:7px;
