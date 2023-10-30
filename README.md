@@ -121,18 +121,28 @@ Done!
 
 
 
-![home](https://user-images.githubusercontent.com/83131771/220484580-5525d1ee-eee1-45fa-b4cf-3476f11c4625.png)
+![Captura de Tela (177)](https://github.com/ThalitaCesar/Interface-IzunomeTV/assets/83131771/ec1c71b6-a868-451e-8de1-83135c75230c)
 
-![home-transmissão](https://user-images.githubusercontent.com/83131771/220484583-feed38cb-4bf2-4ed1-8db4-6c9c3b0d49db.png)
+![Captura de Tela (181)](https://github.com/ThalitaCesar/Interface-IzunomeTV/assets/83131771/927721e7-de3a-41be-8e33-f7f441ccb821)
 
-![oveview](https://user-images.githubusercontent.com/83131771/220484585-6f090bab-2276-4d4d-9fc6-663cfa821a2d.png)
+![Captura de Tela (190)](https://github.com/ThalitaCesar/Interface-IzunomeTV/assets/83131771/51f40c7b-8210-4443-a558-473d612d4f2a)
 
-![footer](https://user-images.githubusercontent.com/83131771/220484586-f3311bc5-e6df-4dcc-ae0a-d2909191c56a.png)
+![Captura de Tela (178)](https://github.com/ThalitaCesar/Interface-IzunomeTV/assets/83131771/dfcf88e5-33ec-47d1-9583-821b5883457e)
 
-![player-comentarios](https://user-images.githubusercontent.com/83131771/220484588-2f26eabb-55d5-4318-b245-851f681a3e92.png)
+![Captura de Tela (179)](https://github.com/ThalitaCesar/Interface-IzunomeTV/assets/83131771/f2a967dc-8b92-48f2-a96f-cc22ad6d1140)
 
-![player](https://user-images.githubusercontent.com/83131771/220484591-e665d52b-06db-4400-bb67-c681e1d1b3ce.png)
+![Captura de Tela (180)](https://github.com/ThalitaCesar/Interface-IzunomeTV/assets/83131771/2d6d4b66-2ece-4f46-b3af-282096a26e20)
 
-![izunome-categorias](https://user-images.githubusercontent.com/83131771/220484594-aa92bcae-3f74-44be-80ef-b4db57430143.png)
+![Captura de Tela (184)](https://github.com/ThalitaCesar/Interface-IzunomeTV/assets/83131771/c09e6983-3f3f-48b2-b824-301cff8f4034)
+
+![Captura de Tela (185)](https://github.com/ThalitaCesar/Interface-IzunomeTV/assets/83131771/40063428-7f8f-40e9-8744-48962efa85c5)
+
+![Captura de Tela (186)](https://github.com/ThalitaCesar/Interface-IzunomeTV/assets/83131771/8b7cc237-b61e-4f05-b2f6-eac988361a48)
+
+![Captura de Tela (188)](https://github.com/ThalitaCesar/Interface-IzunomeTV/assets/83131771/ecd5852e-5280-43bd-9341-e92f52db8fc3)
+
+
+
+
 
 
