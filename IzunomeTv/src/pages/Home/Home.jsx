@@ -26,25 +26,25 @@ const Home = () => {
       <ColumnTwo>
         <Menu/>
         <motion.div
-                variants={fadeIn('down', 'tween', 1.2, 2)}
+                variants={fadeIn('down', 'tween', 1.2, 1.2)}
                 initial="hidden"
                 whileInView="show">
         <SlideLive/>
         </motion.div>
         <motion.div
-                variants={fadeIn('right', 'tween', 1.2, 2)}
+                variants={fadeIn('right', 'tween', 1.2, 1.2)}
                 initial="hidden"
                 whileInView="show">
         <NextVideos/>
         </motion.div>
         <motion.div
-                variants={fadeIn('left', 'tween', 1.2, 2)}
+                variants={fadeIn('left', 'tween', 1.2, 1.2)}
                 initial="hidden"
                 whileInView="show">
         <Overview/>
         </motion.div>
         <motion.div
-                variants={fadeIn('right', 'tween', 1.2, 2)}
+                variants={fadeIn('right', 'tween', 1.2, 1.2)}
                 initial="hidden"
                 whileInView="show">
         <Footer/>

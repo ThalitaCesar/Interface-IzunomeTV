@@ -1,13 +1,16 @@
 import styled from "styled-components";
 
 export const AppMenu = styled.div`
-width: 90vw;
+width: 96vw;
 display:flex;
-height:60px;
-margin:20px;
-padding-left:0px;
+height:75px;
+margin-left:-30px;
+padding: 20px 15px;
+padding-left: 30px;
 justify-content: space-between;
 align-items: center;
+border-bottom:2px solid var(--medium-gray);
+
 `
 
 export const LinkIcon = styled.a`

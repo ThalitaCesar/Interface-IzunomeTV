@@ -5,6 +5,7 @@ import {
 import Category from './pages/Category/Category';
 import Home from './pages/Home/Home';
 import Player from './pages/Player';
+import NotFound from './pages/404/404';
 
 
 const Router = () => {
@@ -16,6 +17,7 @@ const Router = () => {
         <Route index element ={<Home/>}   />
         <Route path="/player" element={<Player/>}  />
         <Route path="/categories" element={<Category/>}  />
+        <Route path="*" element={<NotFound />} />
     </Routes>
     </BrowserRouter>
   );

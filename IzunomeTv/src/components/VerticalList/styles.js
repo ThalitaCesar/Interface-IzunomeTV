@@ -1,14 +1,17 @@
 import styled from "styled-components";
 
 export const Container= styled.div`
+border-left:2px solid var(--medium-gray);
+padding:20px;
 .Title{
     margin-bottom:30px;
-    margin-top:30px;
+    margin-top:0px;
+    color: var(--strong-gray)
 }
 `
 
 export const CarouselContainer= styled.div`
-width: 25vw;
+width: 24vw;
 height:120px;
 display:flex;
 flex-direction:row;
@@ -29,7 +32,7 @@ export const CarouselItem = styled.div`
     url("${(props) => props.backgroundUrl}");
     background-size: 100%;
     background-repeat: no-repeat;
-    width: 200px;
+    width: 250px;
     height:120px;
     padding: 12px;
     cursor:pointer;

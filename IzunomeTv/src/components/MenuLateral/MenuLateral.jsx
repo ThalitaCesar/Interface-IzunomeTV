@@ -92,7 +92,7 @@ const MenuLateral = () => {
                     </Link>
 
                     <Link
-                        to='/'
+                        to='/sobre'
                         style={{
                         textDecoration: 'none'
                     }}>

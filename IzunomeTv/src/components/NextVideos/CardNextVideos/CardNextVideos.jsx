@@ -3,8 +3,7 @@ import {Card} from '../styles';
 import cultoantepassados from '../../../assets/cultoantepassados.png'
 import concerto from '../../../assets/slider/concerto.png'
 import { ButtonGroup, ButtonWatch, Content, Title } from '../../SliderLive/styles';
-import { MdAdd } from 'react-icons/md';
-import { BiPlay } from 'react-icons/bi';
+
 
 const CardNextVideos = () => {
     return ( 
@@ -14,8 +13,8 @@ const CardNextVideos = () => {
       <div>
       <Title style={{fontSize:'16px'}}>Culto Mensal de Agradecimento dedicado às Almas dos Antepassados | Solo Sagrado - 02/11/2023</Title>
       <ButtonGroup>
-      <ButtonWatch style={{width:'180px'}}>
-        <MdAdd size={25}/> Minha Lista
+      <ButtonWatch style={{width:'170px'}}>
+      <span className='icon-plus' style={{marginRight:'4px', fontSize:'20px'}}/> Minha Lista
       </ButtonWatch>
       </ButtonGroup>
       </div>
@@ -26,8 +25,8 @@ const CardNextVideos = () => {
       <div>
       <Title style={{fontSize:'16px'}}>Culto Vesperal (JC Casa Verde/SP) | "As diversas situações após a morte" (1ª parte) - 26/10/2023</Title>
       <ButtonGroup>
-      <ButtonWatch style={{width:'180px'}}>
-        <MdAdd size={25}/> Minha Lista
+      <ButtonWatch style={{width:'170px'}}>
+      <span className='icon-plus' style={{marginRight:'4px', fontSize:'20px'}}/> Minha Lista
       </ButtonWatch>
       </ButtonGroup>
       </div>

@@ -9,7 +9,7 @@ export const SearchbarContainer = styled.div`
   margin: 0 10px;
   width: 385px;
   height: 40px;
- color: var(--light-gray);
+ color: var(--strong-gray);
   @media(max-width: 600px) {
     border-radius: 12px;
     padding: 0px 0px;
@@ -25,6 +25,9 @@ export const Input = styled.input`
   width: 315px;
   height: 50px;
   color: var(--strong-gray);
+  &::placeholder {
+    color: var(--strong-gray);
+  }
   @media(max-width: 600px) {
     background-color:transparent;
     margin-left: 0px;

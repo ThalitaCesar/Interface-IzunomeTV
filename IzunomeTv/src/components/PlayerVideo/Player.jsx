@@ -3,6 +3,8 @@ import { DefaultUi, Player, Youtube } from "@vime/react";
 import { BiLike } from 'react-icons/bi';
 import { FaShareAlt } from 'react-icons/fa';
 import { Video } from './styles';
+import LikeIcon from '../../assets/icons/like';
+import { Tooltip } from 'antd';
 
 const PlayerVideo = () => {
   return (
@@ -15,11 +17,18 @@ const PlayerVideo = () => {
       
       <h3 className='title-video'>Culto Vesperal | Sede Central - 21/02/2023</h3>
       <div className="icons">
+        <Tooltip title="curtir">
         <div className='icon'>
-        <BiLike size={24}/>
+        <span className='icon-like'/>
         </div>
+        </Tooltip>
+        <Tooltip title="compartilhar">
         <div className='icon'>
-        <FaShareAlt size={24}/>
+          <span className='icon-share'/>
+        </div>
+        </Tooltip>
+        <div className='icon' style={{width:'200px'}}>
+          <span className='icon-plus' style={{marginRight:'4px'}}/> Minha lista
         </div>
       </div>
       </div>

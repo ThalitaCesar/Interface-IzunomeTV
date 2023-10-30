@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ContainerOverview = styled.div`
-
 margin:60px;
 margin-top:30px;
 margin-right:30px
@@ -24,15 +23,15 @@ margin:30px;
 max-width:115px;
 display: flex;
 cursor:pointer;
-color: var(--medium-gray);
-border: 1px solid var(--medium-gray);
+color: var(--strong-gray);
+border: 2px solid var(--medium-gray);
 border-radius: 25px;
-padding: 7px;
+padding:5px 12px ;
 align-items:center;
 padding-left:7px;
 justify-content: space-between;
 font-size:14px;
-font-weight: 600;
+font-weight: 400;
 text-align: center;
   &:hover{
   background: var(--medium-gray);

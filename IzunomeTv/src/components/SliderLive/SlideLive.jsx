@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
-import { BiArrowBack, BiPlay } from 'react-icons/bi'
-import { BsBack, BsBackspace } from 'react-icons/bs'
-import { MdAdd } from 'react-icons/md'
+import { BiArrowBack } from 'react-icons/bi'
 import { useNavigate } from 'react-router-dom'
 import ButtonLive from '../ButtonLive/ButtonLive'
 import { ButtonGroup, ButtonWatch, Container, Content, Text, Title, TitleInfo } from './styles'
+import { Divider } from 'antd'
 
 
 export const SlideLive = () => {
@@ -30,11 +29,12 @@ export const SlideLive = () => {
       <ButtonGroup>
       <ButtonWatch onClick={handleClick}>
         <p>Assistir</p>
-        <BiPlay size={25}/>
+        <span className='icon-control-play' style={{marginLeft:'7px', fontSize:'20px'}}/>
       </ButtonWatch>
+      
       <ButtonWatch style={{background: 'rgba(85, 104, 160, 0.4)'}}
       onClick={()=> {setMore(true)}}>
-        <MdAdd size={25}/>
+        <span style={{fontSize:'20px'}} className='icon-info'/>
       </ButtonWatch>
       </ButtonGroup>
       </div>
@@ -43,11 +43,17 @@ export const SlideLive = () => {
 
     ):null}
     {more? (
-      <Container style={{background:"var(--medium-gray)"}}>
+      <Container style={{background:"none"}}>
       <Content>
+      <ButtonWatch style={{ width:'70px'}}
+      onClick={() => setMore(false)}>
+      <span className='icon-arrow-left'/>
+      </ButtonWatch>
       <TitleInfo>Transmissões ao vivo </TitleInfo>
+      <Divider style={{background:'var(--medium-gray)'}}/>
+      <div>
       <Text>
-        <div>
+      <div>
       <b>Cultos Diários:</b><br></br>
       Às 8h30 e às 18 horas<br></br>
       (início da transmissão: 30 minutos antes)<br></br>
@@ -64,10 +70,7 @@ export const SlideLive = () => {
       (início da transmissão: 30 minutos antes)
       </div>
       </Text>
-      <ButtonWatch style={{background: 'rgba(85, 104, 160, 0.4)', width:'70px'}}
-      onClick={() => setMore(false)}>
-      <BiArrowBack size={25}/>
-      </ButtonWatch>
+      </div>
       </Content>    
      </Container>
     ):null}

@@ -7,6 +7,7 @@ flex-direction:column;
 justify-content:space-between;
 width: 88vw; 
 height: 550px;
+border: 2px solid var(--medium-gray);
 border-radius: 14px;
 padding: 30px;
 margin: 30px;
@@ -31,12 +32,14 @@ height: 550px;
 
 export const Title  = styled.p`
 color: var(--light-gray);
-font-weight: 700;
-font-size: 20px;
+font-weight: 300;
+font-size: 28px;
 `
 
 export const TitleInfo  = styled.h3`
 color: var(--blue);
+text-align:center;
+font-size: 28px;
 `
 
 export const Text  = styled.p`
@@ -44,7 +47,7 @@ color: var(--strong-gray);
 font-weight: 300;
 font-size: 16px;
 display:flex;
-justify-content: space-between;
+justify-content: space-around;
 margin-right: 120px;
 align-items:start;
 margin-top: 30px;
@@ -78,11 +81,11 @@ padding: 19px 25px;
 align-items: center;
 flex-shrink: 0;
 border-radius: 15px;
-background: rgba(17, 53, 125, 0.7);
+background: rgba(17, 53, 125, 0.9);
 backdrop-filter: blur(4px);
 justify-content: space-between;
 font-size:16px;
-font-weight: 600;
+font-weight: 400;
 text-align: center;
 --border-size: 0.3rem;
 border: none;

@@ -6,7 +6,7 @@ import CardNextVideos from './CardNextVideos/CardNextVideos';
 const NextVideos = () => {
   return (
     <Container>
-    <Title style={{color: 'var(--light-gray)'}}>Em Breve</Title>
+    <Title>Em Breve</Title>
 
     <CardNextVideos/>
     </Container>

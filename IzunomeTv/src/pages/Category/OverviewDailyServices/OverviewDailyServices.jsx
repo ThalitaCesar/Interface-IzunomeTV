@@ -11,11 +11,11 @@ const OverviewDailyServices = () => {
         </FlexTitle>
       <Carousel/>
 
-      <FlexTitle>
+      <FlexTitle >
         <Title>Cultos Vesperais</Title>
         <Button>ver todos</Button>
         </FlexTitle>
-      <Carousel/>
+      <Carousel />
 
     </ContainerOverview>
   )

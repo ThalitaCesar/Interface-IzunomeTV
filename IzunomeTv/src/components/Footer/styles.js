@@ -15,7 +15,7 @@ background: #292e42;
   box-sizing: border-box;
   bottom: 0;
   overflow-x: hidden;
-  border: 1px solid var(--medium-gray)
+  border: 2px solid var(--medium-gray)
 `;
 
 export const UpperRow = styled.div`

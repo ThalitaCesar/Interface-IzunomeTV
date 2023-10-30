@@ -8,7 +8,7 @@ const Searchbar = () => {
 
     return (
         <SearchbarContainer>
-            <SearchIcon color="#edeff3" size={19} style={{cursor: 'pointer'}}/>
+            <SearchIcon color='var(--strong-gray)' size={19} style={{cursor: 'pointer'}}/>
             <Input placeholder='Buscar'
             //  onClick={() => history.push("/searchpage")}
             />
