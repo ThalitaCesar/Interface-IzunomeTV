@@ -14,9 +14,11 @@ const NotFound = () => {
       <ColumnOne>
         <MenuLateral/>
       </ColumnOne>
-      <ColumnTwo>
+      <ColumnTwo style={{flexDirection:'column',
+      justifyContent:'center',
+      alignItems:'center', marginLeft:'60px'}}>
         <Menu/>
-        <NotFoundFlex>
+        <NotFoundFlex style={{width:'60vw'}}>
           <h1>404</h1>
           <p>Página não encontrada. :(
           </p>
