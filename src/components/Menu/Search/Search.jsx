@@ -5,10 +5,9 @@ import SearchIcon from '../../../assets/icons/search';
 
 const Searchbar = () => {
 
-
     return (
         <SearchbarContainer>
-            <SearchIcon color='var(--strong-gray)' size={19} style={{cursor: 'pointer'}}/>
+            <SearchIcon color='var(--blue)' size={19} style={{cursor: 'pointer'}}/>
             <Input placeholder='Buscar'
             //  onClick={() => history.push("/searchpage")}
             />

@@ -8,7 +8,7 @@ import CategoryIcon from '../../assets/icons/category';
 import SearchIcon from '../../assets/icons/search';
 import AboutIcon from '../../assets/icons/about';
 import LogoutIcon from '../../assets/icons/logout';
-import PayingIcon from '../../assets/icons/praying';
+import favicon from '../../assets/favicon.png'
 import NotificationIcon from '../../assets/icons/notification';
 import WhatchlistIcon from '../../assets/icons/watchlist';
 
@@ -24,28 +24,37 @@ const MenuLateral = () => {
         setIsHovered(false);
     };
 
+    const isMobile = window.innerWidth < 768;
+
     return (
         <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <AppMenu
-             isHovered={isHovered} 
-                style={{
-                width: isHovered
-                    ? '187px'
-                    : '65px'
-            }}>
+            <AppMenu isHovered={isHovered}>
                 <MenuLinks>
                     <Link
                         to='/'
                         style={{
                         textDecoration: 'none',
-                        display: 'flex'
+                        display: 'flex', 
                     }}>
-                        <Avatar
-                            size={50}
-                            style={{
-                            marginLeft: '-16px'
-                        }}
-                            src={user}/> {isHovered && <> <p
+
+                        {isMobile
+                            ? ( <Avatar
+                                size={45}
+                                style={{
+                                marginLeft: '-16px',
+                                border: 'none',
+                                boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)',
+                            }}
+                                src={favicon}/>)
+                            : ( <Avatar
+                                size={50}
+                                style={{
+                                marginLeft: '-16px',
+                                border: 'none',
+                                boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)'
+                            }}
+                                src={user}/>)}
+                        {isHovered && <> <p
                             style={{
                             marginTop: '16px'
                         }}>Meu Perfil</p> </>}
@@ -58,7 +67,7 @@ const MenuLateral = () => {
                         textDecoration: 'none'
                     }}>
                         <Icone>
-                        <HomeIcon color="#5568a0" size={19}/> {isHovered && <p>Página Inicial</p>}
+                            <HomeIcon color="#5568a0" size={19}/> {isHovered && <p>Página Inicial</p>}
                         </Icone>
                     </Link>
 
@@ -68,7 +77,7 @@ const MenuLateral = () => {
                         textDecoration: 'none'
                     }}>
                         <Icone>
-                        <SearchIcon color="#5568a0" size={19}/> {isHovered && <p>Pesquisar</p>}
+                            <SearchIcon color="#5568a0" size={19}/> {isHovered && <p>Pesquisar</p>}
                         </Icone>
                     </Link>
 
@@ -78,7 +87,7 @@ const MenuLateral = () => {
                         textDecoration: 'none'
                     }}>
                         <Icone>
-                        <CategoryIcon color="#5568a0" size={19}/> {isHovered && <p>Categorias</p>}
+                            <CategoryIcon color="#5568a0" size={19}/> {isHovered && <p>Categorias</p>}
                         </Icone>
                     </Link>
                     <Link
@@ -87,7 +96,7 @@ const MenuLateral = () => {
                         textDecoration: 'none'
                     }}>
                         <Icone>
-                        <WhatchlistIcon color="#5568a0" size={19}/> {isHovered && <p>Minha lista</p>}
+                            <WhatchlistIcon color="#5568a0" size={19}/> {isHovered && <p>Minha lista</p>}
                         </Icone>
                     </Link>
 
@@ -97,7 +106,7 @@ const MenuLateral = () => {
                         textDecoration: 'none'
                     }}>
                         <Icone>
-                        <AboutIcon color="#5568a0" size={19}/> {isHovered && <p>Sobre Nós</p>}
+                            <AboutIcon color="#5568a0" size={19}/> {isHovered && <p>Sobre Nós</p>}
                         </Icone>
                     </Link>
                     <Link
@@ -106,18 +115,17 @@ const MenuLateral = () => {
                         textDecoration: 'none'
                     }}>
                         <Icone>
-                        <NotificationIcon color="#5568a0" size={19}/> {isHovered && <p>Notificações</p>}
+                            <NotificationIcon color="#5568a0" size={19}/> {isHovered && <p>Notificações</p>}
                         </Icone>
                     </Link>
 
                 </ShortMenu>
-                <MenuLinks style={{
+                <MenuLinks
+                    style={{
                     marginBottom: '14px',
-                    marginLeft:'8px'
+                    marginLeft: '8px'
                 }}>
-                    <LogoutIcon color="#5568a0"
-                     size={19}
-                    /> {isHovered && <p>Sair</p>}
+                    <LogoutIcon color="#5568a0" size={19}/> {isHovered && <p>Sair</p>}
                 </MenuLinks>
             </AppMenu>
         </div>

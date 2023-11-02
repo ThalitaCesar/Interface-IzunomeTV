@@ -9,14 +9,7 @@ import { NotFoundFlex } from './styles'
 
 const NotFound = () => {
   return (
-    <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="show"
-            viewport={{
-            once: false,
-            amount: 0.25
-        }}>
+
     <HomeContainer>
       <ColumnOne>
         <MenuLateral/>
@@ -25,12 +18,13 @@ const NotFound = () => {
         <Menu/>
         <NotFoundFlex>
           <h1>404</h1>
-          <p>Página não encontrada. :(</p>
+          <p>Página não encontrada. :(
+          </p>
         <Page404/>
         </NotFoundFlex>
       </ColumnTwo>
     </HomeContainer>
-    </motion.div>
+
   )
 }
 

@@ -9,11 +9,14 @@ export const SearchbarContainer = styled.div`
   margin: 0 10px;
   width: 385px;
   height: 40px;
- color: var(--strong-gray);
-  @media(max-width: 600px) {
-    border-radius: 12px;
-    padding: 0px 0px;
-     },
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  color: var(--strong-gray);
+  @media (max-width: 1024px) {
+    width: 285px;
+  }
+  @media (max-width: 580px) {
+    width: 135px;
+  }
 `;
 
 export const Input = styled.input`
@@ -28,9 +31,8 @@ export const Input = styled.input`
   &::placeholder {
     color: var(--strong-gray);
   }
-  @media(max-width: 600px) {
+  @media(max-width: 580px) {
     background-color:transparent;
-    margin-left: 0px;
-    width: 120px;
+    width: 100px;
     }
      `

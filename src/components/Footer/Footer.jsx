@@ -67,7 +67,7 @@ const Footer = () => {
       
         </Column>
         </LinksContainer>
-        <Divider style={{background: '#79ba6e'}}/>
+        <Divider style={{background: '#79ba6e', width:'60vw'}}/>
 
         <SocialNetworksContainer>
            <p style={{fontSize: "14px"}}>@ 2023 Igreja Messiânica Mundial do Brasil. Todos os direitos reservados.</p>

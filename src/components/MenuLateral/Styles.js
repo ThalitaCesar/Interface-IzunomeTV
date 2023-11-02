@@ -11,29 +11,29 @@ export const AppMenu = styled.div`
   padding: 10px;
   margin-top: 0px;
   padding-top: 30px;
-  z-index: 9999; 
+  z-index: 9999;
   border: 2px solid var(--medium-gray);
-  width: ${(props) => (props.isHovered ? '240px' : '5vw')};
+  width: ${(props) => (props.isHovered ? '180px' : '65px')};
+  transition: width 0.3s ease; 
   &:hover {
-    width: 240px;
+    width: 180px;
   }
-
-  /* Adicione o evento onMouseLeave aqui */
   &:hover::after {
     content: '';
     position: fixed;
     top: 0;
-    left: 187px;
+    left: ${(props) => (props.isHovered ? '180px' : '65px')};
     width: 100%;
     height: 100%;
     background: rgba(41, 46, 66, 0.7);
     z-index: 9998;
+    transition: width 0.3s ease, left 0.3s ease;
   }
-  
-  /* Use pointer-events para evitar a detecção de hover no overlay */
+
   &::after {
     pointer-events: none;
   }
+
   p, a {
     margin-left: 10px;
     margin-top: 1px;
@@ -43,9 +43,14 @@ export const AppMenu = styled.div`
     
     &:hover, &:focus {
       color: var(--blue);
-    };
+    }
+  }
+  @media (max-width: 580px) {
+    padding-top: 10px;
+    width: ${(props) => (props.isHovered ? '180px' : '55px')};
   }
 `;
+
 
 export const ShortMenu = styled.div`
  display:flex;
@@ -73,7 +78,7 @@ justify-content:center;
 align-items:center;
 &:hover, &:focus{
   color: var(--blue)
-  }
+  }  
 `
 
 export const Overlay = styled.div`

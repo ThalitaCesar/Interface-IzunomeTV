@@ -6,69 +6,68 @@ import {ColumnOne, ColumnTwo, Container} from './styles'
 import OverviewDailyServices from './OverviewDailyServices/OverviewDailyServices'
 import OverviewMonthlyServices from './OverviewMonthlyServices/OverviewMonthlyServices'
 import OverviewProgramme from './OverviewProgramme/OverviewProgramme'
-import {motion} from 'framer-motion'
-import {fadeIn, staggerContainer} from '../../utils/motion'
 import Footer from '../../components/Footer/Footer'
+import {HomeContainer} from '../Home/styles'
 
 const Category = () => {
 
-    const [showOverview,
-        setShowOverview] = useState(<OverviewDailyServices/>)
-
+    const [selectedOption, setSelectedOption] = useState('OverviewDailyServices');
+    const isMobile = window.innerWidth < 768;
+  
+    const renderOverview = () => {
+      switch (selectedOption) {
+        case 'OverviewDailyServices':
+          return <OverviewDailyServices />;
+        case 'OverviewMonthlyServices':
+          return <OverviewMonthlyServices />;
+        case 'OverviewProgramme':
+          return <OverviewProgramme />;
+        default:
+          return null;
+      }
+    };
+  
+    const handleOptionClick = (option) => {
+      setSelectedOption(option);
+    };
+  
     return (
-        <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="show"
-            viewport={{
-            once: false,
-            amount: 0.25
-        }}>
-            <Container>
-                <ColumnOne>
-                    <MenuLateral/>
-                </ColumnOne>
-                <ColumnTwo>
-                    <Menu/>
-                    <motion.div
-                        variants={fadeIn('down', 'tween', 1.2, 1)}
-                        initial="hidden"
-                        whileInView="show">
-                        <AppMenu>
-                            <button
-                                onClick={() => setShowOverview(<OverviewDailyServices/>)}
-                                className='button'
-                                style={{
-                                borderRight: '2px solid var(--medium-gray'
-                            }}>Cultos Diários</button>
-                            <button
-                                onClick={() => setShowOverview(<OverviewMonthlyServices/>)}
-                                className='button'
-                                style={{
-                                borderRight: '2px solid var(--medium-gray'
-                            }}>Cultos Mensais</button>
-                            <button
-                                onClick={() => setShowOverview(<OverviewProgramme/>)}
-                                className='button'>Programas</button>
-                        </AppMenu>
-                    </motion.div>
-
-                    <motion.div
-                        variants={fadeIn('right', 'tween', 1.2, 1.2)}
-                        initial="hidden"
-                        whileInView="show">
-                        {showOverview}
-                    </motion.div>
-                    <motion.div
-                        variants={fadeIn('right', 'tween', 1.2, 1.2)}
-                        initial="hidden"
-                        whileInView="show">
-                        <Footer/>
-                    </motion.div>
-                </ColumnTwo>
-            </Container>
-        </motion.div>
-    )
-}
-
+      <HomeContainer>
+        <ColumnOne>
+          <MenuLateral />
+        </ColumnOne>
+        <ColumnTwo style={{ paddingLeft: `${isMobile ? '45px' : ''}` }}>
+          <Menu />
+          <AppMenu>
+            <button
+              onClick={() => handleOptionClick('OverviewDailyServices')}
+              className={`${selectedOption === 'OverviewDailyServices' ? 'selected' : 'button'}`}
+              style={{
+                borderRight: `${isMobile ? '' : '2px solid var(--medium-gray)'}`,
+              }}
+            >
+              Cultos Diários
+            </button>
+            <button
+              onClick={() => handleOptionClick('OverviewMonthlyServices')}
+              className={`${selectedOption === 'OverviewMonthlyServices' ? 'selected' : 'button'}`}
+              style={{
+                borderRight: `${isMobile ? '' : '2px solid var(--medium-gray)'}`,
+              }}
+            >
+              Cultos Mensais
+            </button>
+            <button
+              onClick={() => handleOptionClick('OverviewProgramme')}
+              className={`${selectedOption === 'OverviewProgramme' ? 'selected' : 'button'}`}
+            >
+              Programas
+            </button>
+          </AppMenu>
+            {renderOverview()}
+          <Footer />
+        </ColumnTwo>
+      </HomeContainer>
+    );
+  };
 export default Category

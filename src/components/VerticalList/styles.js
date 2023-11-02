@@ -8,6 +8,9 @@ padding:20px;
     margin-top:0px;
     color: var(--strong-gray)
 }
+@media(max-width: 920px) {
+  display:none;
+}
 `
 
 export const CarouselContainer= styled.div`
@@ -33,7 +36,7 @@ export const CarouselItem = styled.div`
     background-size: 100%;
     background-repeat: no-repeat;
     width: 250px;
-    height:120px;
+    height:90px;
     padding: 12px;
     cursor:pointer;
   }

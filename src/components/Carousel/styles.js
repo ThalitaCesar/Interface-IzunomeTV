@@ -9,6 +9,7 @@ display:flex;
   font-size:16px;
   margin-top:6px;
 }
+
 `
 
 export const CarouselItem = styled.div`
@@ -22,10 +23,13 @@ export const CarouselItem = styled.div`
     background-size: 100%;
     background-repeat: no-repeat;
     width: 270px;
-    height:170px;
+    height:150px;
     padding: 12px;
     cursor:pointer;
-  }
+    @media (max-width: 580px) {
+      width: 250px;
+      height:140px;
+    }
 `
 
 export const IconsContainer = styled.div`

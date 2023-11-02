@@ -31,7 +31,7 @@ const Comments = () => {
                     <div className='icon'>
                         <span className='icon-emotsmile'/>
                     </div>
-                    <div className='icon'>
+                    <div className='icon' style={{width:'120px'}}>
                         comentar
                     </div>
                 </div>
