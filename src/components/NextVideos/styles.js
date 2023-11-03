@@ -76,3 +76,11 @@ font-size: 16px;
   display:none;
 }
 `
+
+export const TitleSection = styled.h3`
+color: var(--blue);
+margin-top:30px;
+@media (max-width: 580px) {
+  font-size:16px;
+}
+`

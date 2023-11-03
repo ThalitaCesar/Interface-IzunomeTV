@@ -31,7 +31,7 @@ const MenuLateral = () => {
             <AppMenu isHovered={isHovered}>
                 <MenuLinks>
                     <Link
-                        to='/'
+                        to='/profile'
                         style={{
                         textDecoration: 'none',
                         display: 'flex', 
@@ -72,7 +72,7 @@ const MenuLateral = () => {
                     </Link>
 
                     <Link
-                        to='/'
+                        to='/searchpage'
                         style={{
                         textDecoration: 'none'
                     }}>
@@ -91,7 +91,7 @@ const MenuLateral = () => {
                         </Icone>
                     </Link>
                     <Link
-                        to='/'
+                        to='/mylist'
                         style={{
                         textDecoration: 'none'
                     }}>
@@ -101,7 +101,7 @@ const MenuLateral = () => {
                     </Link>
 
                     <Link
-                        to='/sobre'
+                        to='/about'
                         style={{
                         textDecoration: 'none'
                     }}>
@@ -110,7 +110,7 @@ const MenuLateral = () => {
                         </Icone>
                     </Link>
                     <Link
-                        to='/'
+                        to='/notifications'
                         style={{
                         textDecoration: 'none'
                     }}>

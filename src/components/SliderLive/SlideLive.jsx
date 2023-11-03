@@ -17,7 +17,6 @@ export const SlideLive = () => {
     navigate("/player");
   }
 
-  console.log('more', more)
     return (
       <>
     {!more? (
@@ -31,7 +30,6 @@ export const SlideLive = () => {
         <p>Assistir</p>
         <span className='icon-control-play' style={{marginLeft:'7px', fontSize:'20px'}}/>
       </ButtonWatch>
-      
       <ButtonWatch style={{background: 'rgba(85, 104, 160, 0.4)'}}
       onClick={()=> {setMore(true)}}>
         <span style={{fontSize:'20px'}} className='icon-info'/>

@@ -1,41 +1,37 @@
 import React from 'react'
-import Carousel from '../../../components/Carousel/Carousel'
 import { Button, ContainerOverview, FlexTitle, Title } from './styles'
+import Carousel from '../Carousel/Carousel'
 
-const Overview = () => {
+const OverviewMonthlyServices = () => {
   return (
     <ContainerOverview>
         <FlexTitle>
-        <Title>Novidades</Title>
+        <Title>Palestras</Title>
         <Button>ver todos</Button>
         </FlexTitle>
       <Carousel/>
 
       <FlexTitle>
-        <Title>Eu Caminho com Meishu Sama</Title>
+        <Title>Experiências de Fé</Title>
         <Button>ver todos</Button>
         </FlexTitle>
       <Carousel/>
 
       <FlexTitle>
-        <Title>Cultos Matinais</Title>
+        <Title>Cerimônias</Title>
         <Button>ver todos</Button>
         </FlexTitle>
       <Carousel/>
 
       <FlexTitle>
-        <Title>Cultos Vesperais</Title>
+        <Title>Videoclips</Title>
         <Button>ver todos</Button>
         </FlexTitle>
       <Carousel/>
 
-      <FlexTitle>
-        <Title>Cultos Mensais Solo Sagrado</Title>
-        <Button>ver todos</Button>
-        </FlexTitle>
-      <Carousel/>
+     
     </ContainerOverview>
   )
 }
 
-export default Overview
+export default OverviewMonthlyServices

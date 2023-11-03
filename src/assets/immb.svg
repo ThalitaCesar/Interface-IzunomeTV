@@ -4,10 +4,10 @@
 	 viewBox="0 0 619.3 137" style="enable-background:new 0 0 619.3 137;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
-	.st1{fill:none;stroke:#F6B048;stroke-width:2.561;stroke-miterlimit:22.926;}
+	.st1{fill:none;stroke:#F6B048;strokeWidth:2.561;stroke-miterlimit:22.926;}
 	.st2{fill:#00843A;}
-	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#E1313B;}
-	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:#F6B048;}
+	.st3{fillRule:evenodd;clipRule:evenodd;fill:#E1313B;}
+	.st4{fillRule:evenodd;clipRule:evenodd;fill:#F6B048;}
 </style>
 <g>
 	<circle class="st0" cx="62.5" cy="69" r="62.5"/>

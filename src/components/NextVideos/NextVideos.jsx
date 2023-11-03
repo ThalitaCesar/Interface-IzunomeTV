@@ -1,12 +1,11 @@
 import React from 'react';
-import {Container, FlexCardsNextVideo} from './styles';
-import {Title} from '../../pages/Home/Overview/styles';
+import {Container, FlexCardsNextVideo, TitleSection} from './styles';
 import CardNextVideos from './CardNextVideos/CardNextVideos';
 
 const NextVideos = () => {
     return (
         <Container>
-            <Title>Em Breve</Title>
+            <TitleSection>Em Breve</TitleSection>
             <FlexCardsNextVideo>
                 <CardNextVideos/>
                 <CardNextVideos/>

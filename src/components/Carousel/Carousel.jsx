@@ -3,8 +3,8 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Videos from '../../pages/Home/Mock';
-import { CarouselContainer, CarouselItem } from './styles';
 import {  MdOutlineArrowBackIosNew, MdOutlineArrowForwardIos, MdOutlineDoubleArrow } from 'react-icons/md';
+import CardVideoItem from '../CardVideoItem/CardVideoItem';
 
 const Carousel = () => {
 
@@ -108,15 +108,11 @@ const Carousel = () => {
       ],
     };
 
-console.log(videos)
   return (
 
     <Slider {...settings}>
     {videos.map((video) => (
-       <CarouselContainer key={video.id}>
-       <CarouselItem backgroundUrl={video.url_image}/>
-        <p className='item-name'>{video.title}</p>
-     </CarouselContainer>
+       <CardVideoItem key={video.id} video={video} />
         ))}
     </Slider>
   )

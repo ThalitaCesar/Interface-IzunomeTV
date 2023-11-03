@@ -1,6 +1,6 @@
 import React from 'react'
-import Carousel from '../../../components/Carousel/Carousel'
 import { Button, ContainerOverview, FlexTitle, Title } from './styles'
+import Carousel from '../Carousel/Carousel'
 
 const OverviewDailyServices = () => {
   return (

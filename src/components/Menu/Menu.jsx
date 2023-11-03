@@ -1,11 +1,11 @@
 import React from 'react'
-import { AppMenu, LinkIcon, Logo} from './Styles'
+import { AppMenu, LinkIcon, Logo} from './styles'
 import {BsYoutube, BsInstagram, BsFacebook} from 'react-icons/bs';
 import { FaPrayingHands} from 'react-icons/fa';
 import {MdEmail} from 'react-icons/md';
-import Searchbar from './Search/Search';
 import logo from '../../assets/logo.png'
 import { Link } from 'react-router-dom';
+import Searchbar from '../Search/Search';
 
 const Menu = () => {
 

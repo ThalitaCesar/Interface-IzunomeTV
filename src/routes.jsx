@@ -6,6 +6,12 @@ import Category from './pages/Category/Category';
 import Home from './pages/Home/Home';
 import Player from './pages/Player';
 import NotFound from './pages/404/404';
+import MyList from './pages/MyList/MyList';
+import Profile from './pages/Profile/Profile';
+import Notifications from './pages/Notifications/Notifications';
+import AboutUs from './pages/AboutUs/AboutUs';
+import SignIn from './pages/SignIn/SignIn';
+import SearchPage from './pages/SearchPage/Searchpage';
 
 
 const Router = () => {
@@ -15,8 +21,14 @@ const Router = () => {
     <BrowserRouter>
     <Routes>
         <Route index element ={<Home/>}   />
+        <Route path="/searchpage" element={<SearchPage/>}  />
         <Route path="/player" element={<Player/>}  />
         <Route path="/categories" element={<Category/>}  />
+        <Route path="/mylist" element={<MyList/>}  />
+        <Route path="/profile" element={<Profile/>}  />
+        <Route path="/notifications" element={<Notifications/>}  />
+        <Route path="/about" element={<AboutUs/>}  />
+        <Route path="/login" element={<SignIn/>}  />
         <Route path="*" element={<NotFound />} />
     </Routes>
     </BrowserRouter>

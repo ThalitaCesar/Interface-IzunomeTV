@@ -1,7 +1,6 @@
 import React from 'react';
-import { BiSearch } from 'react-icons/bi';
 import { Input, SearchbarContainer } from './styles';
-import SearchIcon from '../../../assets/icons/search';
+import SearchIcon from '../../assets/icons/search';
 
 const Searchbar = () => {
 

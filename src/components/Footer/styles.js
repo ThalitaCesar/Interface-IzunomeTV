@@ -1,6 +1,21 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+
+export const Div = styled.div`
+margin:60px;
+margin-right:30px
+height:100vh;
+margin-left: -30px;
+@media (max-width: 920px) {
+  margin-right:10px
+}
+@media (max-width: 580px) {
+  margin:20px;
+  margin-right:0px
+  margin-left:60px;
+}
+`
 export const FooterContainer = styled.footer`
 background: #292e42;
  width:100%;

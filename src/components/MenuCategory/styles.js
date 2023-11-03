@@ -1,26 +1,5 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-display:flex;
-flex-direction: row;
-justify-content:start;
-height:auto;
-width:99.5vw;
-overflow-x: hidden;
-`
-export const ColumnTwo = styled.div`
-display:flex;
-flex-direction:column;
-width:90vw;
-height: 100%;
-`
-
-export const ColumnOne = styled.div`
-display:flex;
-flex-direction:column;
-width:6vw;
-height: 100vh;
-`
 export const AppMenu = styled.div`
 width: 90vw;
 display:flex;
