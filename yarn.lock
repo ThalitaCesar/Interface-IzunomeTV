@@ -983,6 +983,22 @@ is-core-module@^2.9.0:
   dependencies:
     has "^1.0.3"
 
+izunometv@./:
+  version "0.0.0"
+  dependencies:
+    "@vime/core" "^5.3.1"
+    "@vime/react" "^5.3.1"
+    antd "^5.1.7"
+    framer-motion "^10.16.4"
+    moment "^2.29.4"
+    react "^18.0.0"
+    react-dom "^18.0.0"
+    react-icons "^4.7.1"
+    react-router-dom "^6.8.1"
+    react-slick "^0.29.0"
+    slick-carousel "^1.8.1"
+    styled-components "^5.3.6"
+
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz"
