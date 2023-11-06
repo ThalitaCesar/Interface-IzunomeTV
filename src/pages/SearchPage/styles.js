@@ -39,4 +39,6 @@ margin-bottom: 40px;
   grid-template-columns: repeat(1, 1fr); 
   width:60vw;
 }
-`
+`;
+
+

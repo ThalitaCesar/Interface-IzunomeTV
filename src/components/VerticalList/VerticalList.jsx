@@ -1,10 +1,12 @@
 import React, {useState} from 'react'
 import Videos from '../../pages/Home/Mock'
 import {CarouselContainer, CarouselItem, Container} from './styles'
+import { useNavigate } from 'react-router-dom'
 
 const VerticalList = () => {
 
     const [videos] = useState(Videos)
+    const navigate = useNavigate()
 
     return (
         <Container>
@@ -12,7 +14,7 @@ const VerticalList = () => {
             {videos
                 .slice(0, 10)
                 .map((video) => (
-                    <CarouselContainer key={video.id}>
+                    <CarouselContainer key={video.id} onClick={() => navigate('/player')}>
                         <CarouselItem backgroundUrl={video.url_image}/>
                         <p className='item-name'>{video.title}</p>
                     </CarouselContainer>

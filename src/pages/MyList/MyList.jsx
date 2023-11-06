@@ -1,11 +1,11 @@
 import React from 'react'
 import Layout from '../../components/Layout/Layout'
 import Videos from '../Home/Mock';
-import CardVideoItem from '../../components/CardVideoItem/CardVideoItem';
 import { useState } from 'react';
-import { Container, GridContainer, Title } from './styles';
+import { Container, GridContainer } from './styles';
 import Pagination from '../../components/Pagination/Pagination';
 import CardVideoMyList from '../../components/CardVideoMyList/CardVideoMyList';
+import TitlePage from '../../components/TitlePage/TitlePage';
 
 const MyList = () => {
 
@@ -24,7 +24,7 @@ const MyList = () => {
     return (
       <Layout>
         <Container>
-        <Title>Minha Lista</Title>
+        <TitlePage NameTitle='Minha Lista'/>
         <GridContainer>
           {currentVideos.map((video) => (
             <CardVideoMyList key={video.id} video={video} />

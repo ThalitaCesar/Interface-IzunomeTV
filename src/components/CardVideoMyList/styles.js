@@ -7,6 +7,9 @@ width: 180px;
 height:200px;
 display:flex;
 flex-direction:column;
+p{
+  cursor:pointer;
+}
 .item-name{
   color: var(--strong-gray);
   font-size:16px;
@@ -60,7 +63,6 @@ export const CarouselItem = styled.div`
     width: 270px;
     height:150px;
     padding: 12px;
-    cursor:pointer;
     @media (max-width: 580px) {
       width: 250px;
       height:140px;
