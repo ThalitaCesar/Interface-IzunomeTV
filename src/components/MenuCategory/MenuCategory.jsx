@@ -3,7 +3,7 @@ import { useState } from 'react';
 import OverviewDailyServices from '../OverviewDailyServices/OverviewDailyServices';
 import OverviewMonthlyServices from '../OverviewMonthlyServices/OverviewMonthlyServices';
 import OverviewProgramme from '../OverviewProgramme/OverviewProgramme';
-import { AppMenu } from './Styles';
+import { AppMenu } from './styles';
 
 const MenuCategory = () => {
 
