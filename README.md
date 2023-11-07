@@ -120,6 +120,7 @@ Done!
 </h1>
 
 
+![Captura de Tela (212)](https://github.com/ThalitaCesar/Interface-IzunomeTV/assets/83131771/1567569b-16f6-4f66-b661-7b334a9aef11)
 
 ![Captura de Tela (177)](https://github.com/ThalitaCesar/Interface-IzunomeTV/assets/83131771/ec1c71b6-a868-451e-8de1-83135c75230c)
 
@@ -138,6 +139,16 @@ Done!
 ![Captura de Tela (185)](https://github.com/ThalitaCesar/Interface-IzunomeTV/assets/83131771/40063428-7f8f-40e9-8744-48962efa85c5)
 
 ![Captura de Tela (186)](https://github.com/ThalitaCesar/Interface-IzunomeTV/assets/83131771/8b7cc237-b61e-4f05-b2f6-eac988361a48)
+
+![Captura de Tela (211)](https://github.com/ThalitaCesar/Interface-IzunomeTV/assets/83131771/f4fd0f52-cce7-4c5a-a918-bfaa41523305)
+
+![Captura de Tela (208)](https://github.com/ThalitaCesar/Interface-IzunomeTV/assets/83131771/6e210b89-5b4f-48bc-aca2-5807b8e7b0bf)
+
+![Captura de Tela (207)](https://github.com/ThalitaCesar/Interface-IzunomeTV/assets/83131771/e97b16ac-107b-428c-ae0b-ac0b716015d3)
+
+![Captura de Tela (210)](https://github.com/ThalitaCesar/Interface-IzunomeTV/assets/83131771/58577c8a-eda1-491f-9923-fd452fa18dda)
+
+![Captura de Tela (209)](https://github.com/ThalitaCesar/Interface-IzunomeTV/assets/83131771/396cd148-d56b-4d22-81a7-0337e2663a66)
 
 ![Captura de Tela (188)](https://github.com/ThalitaCesar/Interface-IzunomeTV/assets/83131771/ecd5852e-5280-43bd-9341-e92f52db8fc3)
 
