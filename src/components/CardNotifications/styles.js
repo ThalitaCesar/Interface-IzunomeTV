@@ -83,6 +83,7 @@ export const CloseButton = styled.div`
   color: var(--light-gray);
   font-size: 25px;
   width: 10%;
+  cursor: pointer;
 `;
 export const Header = styled.div`
   width:100%;

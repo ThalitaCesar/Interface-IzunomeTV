@@ -22,11 +22,8 @@ background-image: linear-gradient(
   url("${ (props) => props.backgroundUrl}");
   background-size: 100%;
   background-repeat: no-repeat;
-  @media(max-width: 1024px) {
-    height:80vh;
-  }
-  @media(max-width: 920px) {
-    background-size: cover
+  @media(max-width: 1320px) {
+    background-size: cover;
   }
   @media(max-width: 580px) {
     width: 72vw; 

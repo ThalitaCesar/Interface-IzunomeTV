@@ -120,13 +120,21 @@ const MenuLateral = () => {
                     </Link>
 
                 </ShortMenu>
-                <MenuLinks
+                
+                    <Link
+                        to='/login'
+                        style={{
+                        textDecoration: 'none'
+                    }}>
+                        <MenuLinks
                     style={{
                     marginBottom: '14px',
                     marginLeft: '8px'
                 }}>
                     <LogoutIcon color="#5568a0" size={19}/> {isHovered && <p>Sair</p>}
-                </MenuLinks>
+                    </MenuLinks>
+                    </Link>
+              
             </AppMenu>
         </div>
     );

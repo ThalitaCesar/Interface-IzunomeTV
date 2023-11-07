@@ -8,7 +8,6 @@ const CardVideoMyList = ({video}) => {
     return (
         <CarouselContainer >
             <CarouselItem backgroundUrl={video.url_image} alt={video.title}/>
-          
             <p className='item-name' onClick={() => navigate('/player')}>{video.title}</p>
             <div className="icons">
               <Tooltip title="Excluir video da minha lista">

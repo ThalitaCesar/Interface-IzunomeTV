@@ -11,7 +11,7 @@ const CardNotifications = () => {
                         <Info>
                             <Title>Atualize Suas Preferências de Conteúdo</Title>
                         </Info>
-                        <CloseButton>X</CloseButton>
+                        <CloseButton><span className='icon-trash'/></CloseButton>
                     </Header>
                     <Text>
                         Olá! Queremos garantir que você tenha a melhor experiência de streaming. Acesse
@@ -24,7 +24,7 @@ const CardNotifications = () => {
                         <Info>
                             <Title>Ajuste Sua Reprodução Automática</Title>
                         </Info>
-                        <CloseButton>X</CloseButton>
+                        <CloseButton><span className='icon-trash'/></CloseButton>
                     </Header>
                     < Text >
                         Prezado usuário, você tem o controle total da reprodução automática. Vá para as

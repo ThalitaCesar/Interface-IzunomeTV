@@ -11,9 +11,7 @@ margin-left: -30px;
   margin-right:10px
 }
 @media (max-width: 580px) {
-  margin:20px;
-  margin-right:0px
-  margin-left:60px;
+  margin-left: -25px;
 }
 `
 export const FooterContainer = styled.footer`

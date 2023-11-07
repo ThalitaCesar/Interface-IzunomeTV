@@ -31,6 +31,7 @@ margin-top:30px;
 
 export const Button = styled.div`
 margin:30px;
+margin-right:0;
 display: flex;
 cursor:pointer;
 color: var(--strong-gray);

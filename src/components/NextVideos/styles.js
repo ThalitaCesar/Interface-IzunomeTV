@@ -8,13 +8,19 @@ width:100vw;
 margin-top: 120px;
 padding-top:40px;
 padding-bottom:30px;
+@media (max-width: 1400px) {
+  padding-left:30px;
+}
+@media (max-width: 1200px) {
+  padding-left:60px;
+}
 @media (max-width: 924px) {
   margin-top: 40px;
   padding-top:20px;
   padding-bottom:0px;
 }
 @media (max-width: 624px) {
-  padding-left:50px;
+  padding-left:40px;
   margin-top: 40px;
 }
 `
@@ -22,7 +28,7 @@ padding-bottom:30px;
 export const FlexCardsNextVideo = styled.div `
 display:flex;
 margin-bottom:60px;
-@media (max-width: 1300px) {
+@media (max-width: 1180px) {
   flex-direction:column;
 }
 `
@@ -42,10 +48,12 @@ export const Card = styled.div `
               url(${props => props.backgroundImage});
               background-size: 100%;
               background-repeat: no-repeat;
-              @media (max-width: 1324px) {
+              @media (max-width: 1300px) {
+                margin-left:0px;
+              }
+              @media (max-width: 1186px) {
                 width: 85vw;
                 height: 298px;
-                margin-left:-20px;
               }
               @media (max-width: 580px) {
                 width: 75vw;

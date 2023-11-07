@@ -5,7 +5,7 @@ export const Title = styled.h3 `
 color: var(--blue);
 text-align:center;
 font-size: 28px;
-margin-left: -30px;
+margin-left: 30px;
 margin-bottom:40px;
 @media(max-width: 920px) {
     font-size: 26px;

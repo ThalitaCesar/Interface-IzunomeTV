@@ -24,7 +24,7 @@ const Category = () => {
     return (
         <Layout>
         <Container>
-            <TitlePage NameTitle='Nome da Categoria'/>
+            <TitlePage NameTitle='Eu Caminho com Meishu Sama'/>
         <GridContainer>
           {currentVideos.map((video) => (
             <CardVideoItem key={video.id} video={video} />
