@@ -1,12 +1,11 @@
 import React from 'react'
-import Layout from '../../components/Layout/Layout'
-import CardNotifications from '../../components/CardNotifications/CardNotifications';
-
+import {CardNotifications, Layout, Menu} from 'src/components';
 
 const Notifications = () => {
 
     return (
         <Layout>
+            <Menu/>
             <CardNotifications/>
         </Layout>
     );

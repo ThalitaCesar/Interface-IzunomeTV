@@ -1,11 +1,9 @@
 import React from 'react'
-import Layout from '../../components/Layout/Layout'
 import Videos from '../Home/Mock';
-import CardVideoItem from '../../components/CardVideoItem/CardVideoItem';
+import {CardVideoItem, Layout,Menu,Pagination,TitlePage  } from 'src/components';
 import { useState } from 'react';
 import { Container, GridContainer } from './styles';
-import Pagination from '../../components/Pagination/Pagination';
-import TitlePage from '../../components/TitlePage/TitlePage';
+
 
 const Category = () => {
 
@@ -23,6 +21,7 @@ const Category = () => {
 
     return (
         <Layout>
+          <Menu />
         <Container>
             <TitlePage NameTitle='Eu Caminho com Meishu Sama'/>
         <GridContainer>

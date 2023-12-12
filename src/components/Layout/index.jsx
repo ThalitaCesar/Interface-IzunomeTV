@@ -1,22 +1,18 @@
 import React from 'react';
-import { ColumnOne, ColumnTwo, HomeContainer } from './styles';
-import MenuLateral from '../MenuLateral/MenuLateral';
-import Menu from '../Menu/Menu';
-
+import {ColumnOne, ColumnTwo, HomeContainer} from './styles';
+import {MenuLateral} from '../index';
 
 const Layout = ({children}) => {
-    return (
 
+    return (
         <HomeContainer>
             <ColumnOne>
                 <MenuLateral/>
             </ColumnOne>
             <ColumnTwo>
-                <Menu/>
-                {children}
+             {children}
             </ColumnTwo>
         </HomeContainer>
-
     );
 };
 

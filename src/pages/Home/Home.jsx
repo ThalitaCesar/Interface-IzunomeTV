@@ -1,14 +1,10 @@
 import React from 'react'
-import {SlideLive} from '../../components/SliderLive/SlideLive'
-import Overview from '../../components/Overview/Overview'
-import NextVideos from '../../components/NextVideos/NextVideos'
-import Layout from '../../components/Layout/Layout'
-import Footer from '../../components/Footer/Footer'
+import {Layout, Footer, NextVideos, Overview, SliderLive } from 'src/components'
 
 const Home = () => {
     return (
         <Layout>
-            <SlideLive/>
+            <SliderLive/>
             <NextVideos/>
             <Overview/>
             <Footer/>

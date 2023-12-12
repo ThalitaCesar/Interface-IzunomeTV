@@ -2,23 +2,18 @@ import styled, {keyframes} from "styled-components";
 
 export const Container = styled.div `s
 overflow-x: hidden;
+position: relative;
 display:flex;
 flex-direction:column;
 justify-content:space-between;
-width: 88vw; 
-height: 550px;
-border: 2px solid var(--medium-gray);
-border-radius: 14px;
-padding: 30px;
-margin: 30px;
+width: 95.2vw; 
+height: 710px;
+margin: 0px;
 margin-bottom:30px;
-background-image: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0) 1%,
-    rgba(0,0,0,0.01) 2%,
-    rgba(0,0,0,0.84) 83%,
-    rgba(0,0,0,0.91) 90%
-  ),
+padding:20px;
+padding-top:0;
+margin-left: -35.3px;
+background:none;
   url("${ (props) => props.backgroundUrl}");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -34,11 +29,25 @@ background-image: linear-gradient(
     margin-top:30px;
   }
    `
+
+  export  const VideoContainer = styled.iframe`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 96.2vw; 
+  margin-left:-10px;
+  height: 830px;
+  margin-top: -150px;
+  border-bottom-right-radius:280px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+`;
 export const Content = styled.div `
 display:flex;
 flex-direction:column;
 justify-content:space-between;
-height: 550px;
+padding-top:100px;
+padding: 30px;
+height: 710px;
 @media(max-width: 580px) {
   height: 100vh;
 }
@@ -47,7 +56,9 @@ height: 550px;
 export const Title = styled.p `
 color: var(--light-gray);
 font-weight: 300;
-font-size: 28px;
+font-size: 20px;
+position: absolute;
+bottom: 140px;
 @media(max-width: 580px) {
   font-size: 16px;
   margin-top:50px;

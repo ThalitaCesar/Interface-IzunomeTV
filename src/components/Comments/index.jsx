@@ -15,6 +15,7 @@ import Container, {
 import user2 from '../../assets/user2.jpg'
 import user from '../../assets/user.jpg'
 import user3 from '../../assets/user3.jpg'
+
 const Comments = () => {
 
     return (

@@ -14,7 +14,6 @@ import SearchPage from './pages/SearchPage/Searchpage';
 import Categories from './pages/Categories/Categories';
 import Category from './pages/Category/Category';
 
-
 const Router = () => {
 
   
@@ -23,7 +22,7 @@ const Router = () => {
     <Routes>
         <Route index element ={<Home/>}   />
         <Route path="/searchpage" element={<SearchPage/>}  />
-        <Route path="/player" element={<Player/>}  />
+        <Route path="/player/:videoId" element={<Player/>}  />
         <Route path="/category" element={<Category/>}  />
         <Route path="/categories" element={<Categories/>}  />
         <Route path="/mylist" element={<MyList/>}  />

@@ -8,7 +8,7 @@ justify-content:center;
 align-items:center;
 margin-top: 40px;
 width:94vw;
-padding-bottom:50px;
+padding-bottom:10px;
 @media (max-width: 1300px) {
   padding-bottom:30px;
 }

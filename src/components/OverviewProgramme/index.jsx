@@ -1,38 +1,39 @@
 import React from 'react'
+import { Carousel } from '..'
 import {Button, ContainerOverview, FlexTitle, Title} from './styles'
-import Carousel from '../Carousel/Carousel'
-import { useNavigate } from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 
-const Overview = () => {
+const OverviewProgramme = () => {
     const navigate = useNavigate()
     return (
         <ContainerOverview>
-            <FlexTitle>
-                <Title>Novidades</Title>
-                <Button onClick={() => navigate('/category')}>ver todos</Button>
-            </FlexTitle>
-            <Carousel/>
-
             <FlexTitle>
                 <Title>Eu Caminho com Meishu Sama</Title>
                 <Button onClick={() => navigate('/category')}>ver todos</Button>
             </FlexTitle>
             <Carousel/>
-
             <FlexTitle>
-                <Title>Cultos Matinais</Title>
+                <Title>Novidades</Title>
                 <Button onClick={() => navigate('/category')}>ver todos</Button>
             </FlexTitle>
             <Carousel/>
-
             <FlexTitle>
-                <Title>Cultos Vesperais</Title>
+                <Title>Documentários</Title>
                 <Button onClick={() => navigate('/category')}>ver todos</Button>
             </FlexTitle>
             <Carousel/>
-
             <FlexTitle>
-                <Title>Cultos Mensais Solo Sagrado</Title>
+                <Title>Eventos Artísticos</Title>
+                <Button onClick={() => navigate('/category')}>ver todos</Button>
+            </FlexTitle>
+            <Carousel/>
+            <FlexTitle>
+                <Title>Atividades nas Unidades</Title>
+                <Button onClick={() => navigate('/category')}>ver todos</Button>
+            </FlexTitle>
+            <Carousel/>
+            <FlexTitle>
+                <Title>Horta Caseira</Title>
                 <Button onClick={() => navigate('/category')}>ver todos</Button>
             </FlexTitle>
             <Carousel/>
@@ -40,4 +41,4 @@ const Overview = () => {
     )
 }
 
-export default Overview
+export default OverviewProgramme

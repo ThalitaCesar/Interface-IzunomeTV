@@ -3,34 +3,35 @@ import styled from "styled-components";
 
 
 export const CarouselContainer= styled.div`
-width: 180px;
-height:200px;
+width: 270px;
+height:220px;
 display:flex;
 flex-direction:column;
 .item-name{
   color: var(--strong-gray);
-  font-size:16px;
+  font-size:14px;
   margin-top:6px;
 }
 
 `
 
 export const CarouselItem = styled.div`
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    justify-content:space-between;
+    justify-content: space-between;
     border-radius: 8px;
-    background-image: 
-    url("${(props) => props.backgroundUrl}");
-    background-size: 100%;
+    background-image: url("${(props) => props.backgroundUrl}");
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center; 
     width: 270px;
-    height:150px;
+    height: 150px;
     padding: 12px;
-    cursor:pointer;
+    cursor: pointer;
+
     @media (max-width: 580px) {
-      width: 250px;
-      height:140px;
+        width: 250px;
+        height: 140px;
     }
-`
+`;

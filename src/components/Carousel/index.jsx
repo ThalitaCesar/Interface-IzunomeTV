@@ -3,14 +3,23 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Videos from '../../pages/Home/Mock';
-import {  MdOutlineArrowBackIosNew, MdOutlineArrowForwardIos, MdOutlineDoubleArrow } from 'react-icons/md';
-import CardVideoItem from '../CardVideoItem/CardVideoItem';
+import {  MdOutlineArrowBackIosNew, MdOutlineArrowForwardIos} from 'react-icons/md';
+import { CardVideoItem } from '..';
 
-const Carousel = () => {
+const Carousel = ({category}) => {
 
-  const [videos, setVideos] = useState(Videos)
+  const [videos, setVideos] = useState(Videos);
+  const filterAndSortVideos = () => {
+    if (category === 'news') {
+      return videos.slice().sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+    } else {
+      return videos.filter(video => video.category === category);
+    }
+  };
 
-  function SampleNextArrow(props) {
+  console.log('Videos:', Videos);
+
+  const SampleNextArrow = (props) => {
     const { className, style, onClick } = props;
     return (
       <MdOutlineArrowForwardIos
@@ -19,18 +28,18 @@ const Carousel = () => {
         onClick={onClick}
       />
     );
-  }
-  
-  function SamplePrevArrow(props) {
+  };
+
+  const SamplePrevArrow = (props) => {
     const { className, style, onClick } = props;
     return (
       <MdOutlineArrowBackIosNew
-      className={className}
-      style={{ ...style, display: "block", color: "var(--blue)" }}
-      onClick={onClick}
-    />
+        className={className}
+        style={{ ...style, display: "block", color: "var(--blue)" }}
+        onClick={onClick}
+      />
     );
-  }
+  };
 
   var settings = {
       dots: false,
@@ -147,10 +156,10 @@ const Carousel = () => {
   return (
 
     <Slider {...settings}>
-    {videos.map((video) => (
-       <CardVideoItem key={video.id} video={video} />
-        ))}
-    </Slider>
+      {filterAndSortVideos().map((video) => (
+        <CardVideoItem key={video.id} video={video} />
+      ))}
+  </Slider>
   )
 }
 

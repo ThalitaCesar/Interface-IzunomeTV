@@ -1,12 +1,11 @@
 import React from 'react'
-import Layout from '../../components/Layout/Layout'
-import MenuCategory from '../../components/MenuCategory/MenuCategory'
-import Footer from '../../components/Footer/Footer';
+import {MenuCategory, Layout, Footer, Menu} from 'src/components';
 
 const Categories = () => {
 
     return (
         <Layout>
+            <Menu />
             <MenuCategory/>
             <Footer/>
         </Layout>

@@ -14,7 +14,7 @@ border-bottom:2px solid var(--medium-gray);
 export const ColumnTwo = styled.div`
 display:flex;
 flex-direction:column;
-width:90vw;
+width:93.5vw;
 height: 100vh;
 bottom:0;
 @media (max-width: 580px) {
