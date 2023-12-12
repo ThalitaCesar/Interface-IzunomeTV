@@ -1,11 +1,12 @@
 import React from 'react'
-import Layout from '../../components/Layout/Layout'
+import {Layout, Menu} from 'src/components';
 import { Container, Text, TextContainer, Title } from './styles';
 
 const AboutUs = () => {
 
     return (
         <Layout>
+            <Menu />
             <Container>
                 <TextContainer>
                 <Title>Seja bem-vindo(a) à Izunome.tv!</Title>

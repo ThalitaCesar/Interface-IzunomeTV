@@ -1,0 +1,24 @@
+export { default as ButtonLive } from './ButtonLive';
+export { default as CardNotifications } from './CardNotifications';
+export { default as CardVideoItem } from './CardVideoItem';
+export { default as CardVideoMyList } from './CardVideoMyList';
+export { default as Carousel } from './Carousel';
+export { default as Comments } from './Comments';
+export { default as FormProfile } from './FormProfile';
+export { default as Layout } from './Layout';
+export { default as Menu } from './Menu';
+export { default as MenuCategory } from './MenuCategory';
+export { default as MenuLateral } from './MenuLateral';
+export { default as NextVideos } from './NextVideos';
+export { default as Overview } from './Overview';
+export { default as OverviewDailyServices } from './OverviewDailyServices';
+export { default as OverviewMonthlyServices } from './OverviewMonthlyServices';
+export { default as OverviewProgramme } from './OverviewProgramme';
+export { default as Pagination } from './Pagination';
+export { default as PlayerVideo } from './PlayerVideo';
+export { default as Searchbar } from './Searchbar';
+export { default as SliderLive } from './SliderLive';
+export { default as TitlePage } from './TitlePage';
+export { default as VerticalList } from './VerticalList';
+export { default as Footer } from './Footer';
+

@@ -1,8 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import OverviewDailyServices from '../OverviewDailyServices/OverviewDailyServices';
-import OverviewMonthlyServices from '../OverviewMonthlyServices/OverviewMonthlyServices';
-import OverviewProgramme from '../OverviewProgramme/OverviewProgramme';
+import {OverviewDailyServices, OverviewMonthlyServices, OverviewProgramme} from '../index'
 import { AppMenu } from './styles';
 
 const MenuCategory = () => {

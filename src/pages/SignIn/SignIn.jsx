@@ -15,7 +15,6 @@ import {
 } from './styles';
 import {Link, useNavigate} from 'react-router-dom/dist';
 import logo from '../../assets/logo.png'
-import { FaPrayingHands } from 'react-icons/fa';
 import { BsFacebook, BsInstagram, BsYoutube } from 'react-icons/bs';
 import { BiWorld } from 'react-icons/bi';
 

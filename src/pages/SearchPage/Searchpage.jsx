@@ -1,42 +1,38 @@
-import React from 'react'
-import Layout from '../../components/Layout/Layout'
-import Videos from '../Home/Mock';
-import CardVideoItem from '../../components/CardVideoItem/CardVideoItem';
-import { useState } from 'react';
+import React from 'react';
+import {CardVideoItem, Layout,Menu,Pagination} from 'src/components';
 import { Container, GridContainer } from './styles';
-import Pagination from '../../components/Pagination/Pagination';
-
+import { useYoutube } from '../../api/YoutubeContext';
 
 const SearchPage = () => {
+  const { channelVideos, currentPage, setCurrentPage } = useYoutube(); 
+  const itemsPerPage = 8;
+  const videoList=channelVideos;
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentVideos = videoList.slice(indexOfFirstItem, indexOfLastItem);
+console.log('currentVideos', channelVideos)
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
 
-    const [videos] = useState(Videos);
-    const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 8;
-  
-    const indexOfLastItem = currentPage * itemsPerPage;
-    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-    const currentVideos = videos.slice(indexOfFirstItem, indexOfLastItem);
-  
-    const handlePageChange = (page) => {
-      setCurrentPage(page);
-    };
-  
-    return (
-      <Layout>
-        <Container>
+  return (
+    <Layout>
+      <Menu />
+      <Container>
         <GridContainer>
           {currentVideos.map((video) => (
-            <CardVideoItem key={video.id} video={video} />
+            <CardVideoItem key={video.videoId} video={video} />
           ))}
         </GridContainer>
         <Pagination
-          totalItems={videos.length}
+          totalItems={videoList.length}
           itemsPerPage={itemsPerPage}
           currentPage={currentPage}
           onChange={handlePageChange}
         />
-        </Container>
-      </Layout>
-    );
+      </Container>
+    </Layout>
+  );
 };
-export default SearchPage
+
+export default SearchPage;

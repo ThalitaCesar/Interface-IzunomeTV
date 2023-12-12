@@ -36,7 +36,7 @@ export const RightSection = styled.div`
 
 export const BackgroundImage = styled.div`
   background-size: cover;
-  width:50vw;
+  width:66vw;
   position: relative;
   height:100vh;
   background-image: linear-gradient(
@@ -60,14 +60,14 @@ padding:60px;
   justify-content:center;
   color: var (--medium-gray);
   h1{
-    font-size:44px;
+    font-size:34px;
     @media (max-width: 718px) {
         font-size:24px;
       }
   }
   p{
     font-weight: 300;
-    font-size:18px;
+    font-size:14px;
     margin-top:10px;
     @media (max-width: 718px) {
         font-size:14px;
@@ -87,7 +87,7 @@ export const Form = styled.form`
 `;
 
 export const FormInput = styled.input`
-background-color: #292e46;
+background: rgba(179, 198, 221, 0.2);
 padding: 10px 15px;
 display: flex;
 justify-content: center;
@@ -114,7 +114,7 @@ color: var(--light-gray);
 
 export const FormButton = styled.button`
   padding: 12px;
-  font-size: 18px;
+  font-size: 14px;
   width: 400px;
   background: rgba(17, 53, 125, 0.9);
   color: white;
@@ -152,7 +152,7 @@ export const SocialIcons = styled.div`
   }
 `;
 export const Logo = styled.img`
-height: 48px;
+height: 42px;
 align-self:center;
 margin-bottom: 50px;
 

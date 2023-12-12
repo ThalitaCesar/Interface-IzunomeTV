@@ -1,17 +1,14 @@
 import styled from "styled-components";
 
 export const AppMenu = styled.div`
-width: 96vw;
+width: 94vw;
 display:flex;
 height:75px;
-margin-left:-30px;
 padding: 20px 15px;
-padding-left: 30px;
+top: 0; 
 justify-content: space-between;
 align-items: center;
-border-bottom:2px solid var(--medium-gray);
-border-top:2px solid var(--medium-gray);
-border-right:2px solid var(--medium-gray);
+z-index: 1000; 
 @media (max-width: 1024px) {
   padding-left:60px;
   padding-right:30px;

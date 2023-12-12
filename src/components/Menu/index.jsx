@@ -4,8 +4,8 @@ import { FaPrayingHands} from 'react-icons/fa';
 import {MdEmail} from 'react-icons/md';
 import logo from '../../assets/logo.png'
 import { Link } from 'react-router-dom';
-import Searchbar from '../Search/Search';
-import { AppMenu, LinkIcon, Logo } from './Styles';
+import { AppMenu, LinkIcon, Logo } from './styles';
+import { Searchbar } from '..';
 
 const Menu = () => {
 

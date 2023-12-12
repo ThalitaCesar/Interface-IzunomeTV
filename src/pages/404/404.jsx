@@ -1,11 +1,12 @@
 import React from 'react'
 import Page404 from '../../assets/icons/404'
 import {NotFoundFlex} from './styles'
-import Layout from '../../components/Layout/Layout'
+import { Layout, Menu } from 'src/components'
 
 const NotFound = () => {
     return (
         <Layout>
+            <Menu />
             <NotFoundFlex style={{
                 width: '60vw'
             }}>

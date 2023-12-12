@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const StyledPagination = styled(AntPagination)`
   && {
-    margin-top: 20px;
+    margin-top: 50px;
     .ant-pagination-item-active {
         background-color: var(--medium-gray);
         border:none;

@@ -1,14 +1,12 @@
 import React from "react";
 import {ColumnOneVideo, ColumnTwoVideos, Container} from "./styles";
-import VerticalList from "../../components/VerticalList/VerticalList";
-import Comments from "../../components/Comments/Comments";
-import PlayerVideo from "../../components/PlayerVideo/Player";
-import Layout from "../../components/Layout/Layout";
+import {Layout, PlayerVideo, Comments, VerticalList, Menu} from 'src/components'
 
 const Player = () => {
 
     return (
         <Layout>
+            <Menu />
             <Container>
                 <ColumnOneVideo>
                     <PlayerVideo/>

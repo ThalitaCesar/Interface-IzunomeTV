@@ -1,11 +1,9 @@
 import React from 'react'
-import Layout from '../../components/Layout/Layout'
+import {CardVideoMyList, Layout,Menu,Pagination, TitlePage} from 'src/components';
 import Videos from '../Home/Mock';
 import { useState } from 'react';
 import { Container, GridContainer } from './styles';
-import Pagination from '../../components/Pagination/Pagination';
-import CardVideoMyList from '../../components/CardVideoMyList/CardVideoMyList';
-import TitlePage from '../../components/TitlePage/TitlePage';
+
 
 const MyList = () => {
 
@@ -23,6 +21,7 @@ const MyList = () => {
   
     return (
       <Layout>
+        <Menu />
         <Container>
         <TitlePage NameTitle='Minha Lista'/>
         <GridContainer>

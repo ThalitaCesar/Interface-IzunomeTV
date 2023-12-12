@@ -13,13 +13,13 @@ import NotificationIcon from '../../assets/icons/notification';
 import WhatchlistIcon from '../../assets/icons/watchlist';
 
 const MenuLateral = () => {
-    const [isHovered,
-        setIsHovered] = useState(false);
+
+    const [isHovered, setIsHovered] = useState(false);
 
     const handleMouseEnter = () => {
         setIsHovered(true);
     };
-
+    
     const handleMouseLeave = () => {
         setIsHovered(false);
     };
